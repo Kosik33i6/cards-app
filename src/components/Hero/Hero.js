@@ -7,18 +7,18 @@ import styles from './Hero.scss';
 
 
 const Hero = ({titleText, image}) => {
-    console.log(titleText);
-    return (
-        <header className={styles.component}>
-            <h2 className={styles.title}>{ReactHtmlParser(titleText)}</h2>
-            <img className={styles.image} src={image} alt="hero" />
-        </header>
-     );
-}
+  console.log(titleText);
+  return (
+    <header className={styles.component}>
+      <h2 className={styles.title}>{ReactHtmlParser(titleText)}</h2>
+      <img className={styles.image} src={image} alt="hero" />
+    </header>
+  );
+};
 
 Hero.propTypes = {
-    titleText: PropTypes.node.isRequired,
-    image: PropTypes.string,
-}
+  titleText: PropTypes.node.isRequired,
+  image: PropTypes.string,
+};
 
 export default Hero;
