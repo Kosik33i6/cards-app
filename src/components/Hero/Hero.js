@@ -7,7 +7,6 @@ import styles from './Hero.scss';
 
 
 const Hero = ({titleText, image}) => {
-  console.log(titleText);
   return (
     <header className={styles.component}>
       <h2 className={styles.title}>{ReactHtmlParser(titleText)}</h2>

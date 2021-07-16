@@ -6,7 +6,7 @@ import styles from './Card.scss';
 
 class Card extends Component {
     static propTypes = {
-      title: PropTypes.string,
+      title: PropTypes.node,
     }
     render() {
       return (
