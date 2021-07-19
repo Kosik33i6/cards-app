@@ -5,7 +5,7 @@ import ReactHtmlParser from 'react-html-parser';
 
 import Hero from '../Hero/Hero';
 import Column from '../Column/ColumnContainer';
-// import Creator from '../Creator/Creator';
+import Creator from '../Creator/Creator';
 
 import {settings} from '../../data/dataStore';
 
@@ -18,6 +18,7 @@ class List extends Component {
     columns: PropTypes.array,
     title: PropTypes.node.isRequired,
     image: PropTypes.string,
+    addColumn: PropTypes.func,
   }
   static defaultProps = {
     description: settings.defaultListDescription,
@@ -25,7 +26,7 @@ class List extends Component {
 
   render() {
 
-    const {title, image, description, columns} = this.props;
+    const {title, image, description, columns, addColumn} = this.props;
 
     const columnsComponent = columns.map(columnData => (
       <Column key={columnData.id} {...columnData}/>
@@ -44,7 +45,7 @@ class List extends Component {
           {columnsComponent}
         </div>
         <div className={styles.creator}>
-          {/* <Creator text={settings.columnCreatorText} action={title => this.addColumn(title)}/> */}
+          <Creator text={settings.columnCreatorText} action={addColumn}/>
         </div>
       </section>
     );
