@@ -9,8 +9,8 @@ import {getColumnsForList, createActionAddColumn} from '../../redux/columnsRedux
 // });
 
 const mapStateToProps = (state, props) => {
-  console.log('state: ', state);
-  console.log('props: ', props);
+  // console.log('state: ', state);
+  // console.log('props: ', props);
   return {
     columns: getColumnsForList(state, props.id),
   };

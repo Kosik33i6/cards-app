@@ -28,6 +28,8 @@ class List extends Component {
 
     const {title, image, description, columns, addColumn} = this.props;
 
+    // console.log(this.props);
+
     const columnsComponent = columns.map(columnData => (
       <Column key={columnData.id} {...columnData}/>
     ));
