@@ -20,13 +20,12 @@ class Column extends Component {
     }
 
     render() {
-
       const {title, icon, cards, addCard} = this.props;
-      console.log(this.props.addCard);
 
       const cardsComponent = cards.map((cardData) => (
         <Card key={cardData.id} {...cardData}/>
       ));
+
       return (
         <section className={styles.component}>
           <h3 className={styles.title}>
