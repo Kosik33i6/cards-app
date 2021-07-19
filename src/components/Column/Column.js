@@ -22,6 +22,7 @@ class Column extends Component {
     render() {
 
       const {title, icon, cards, addCard} = this.props;
+      console.log(this.props.addCard);
 
       const cardsComponent = cards.map((cardData) => (
         <Card key={cardData.id} {...cardData}/>
@@ -35,7 +36,7 @@ class Column extends Component {
             </span>
           </h3>
           {cardsComponent}
-          <Creator text={settings.cardCreatorText} action={addCard(title)}/>
+          <Creator text={settings.cardCreatorText} action={addCard}/>
         </section>
       );
     }
