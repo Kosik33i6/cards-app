@@ -1,20 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import PropTypes from 'prop-types';
 
 import styles from './Card.scss';
 
-class Card extends Component {
-    static propTypes = {
-      title: PropTypes.node,
-    }
-    render() {
-      return (
-        <div className={styles.component}>
-          {this.props.title}
-        </div>
-      );
-    }
-}
+const Card = ({title}) => {
+  return (
+    <div className={styles.component}>
+      {title}
+    </div>
+  );
+};
+
+Card.propTypes = {
+  title: PropTypes.node,
+};
 
 export default Card;
