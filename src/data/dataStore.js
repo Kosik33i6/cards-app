@@ -1,6 +1,7 @@
 export const settings = {
   columnCreatorText: 'Add new column',
   cardCreatorText: 'Add new card',
+  // listCreatortext: ['title', 'description', 'imageUrl'],
   creator: {
     buttonOK: 'OK',
     buttonCancel: 'Cancel',
@@ -11,7 +12,16 @@ export const settings = {
     icon: 'search',
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
+  defaultListImage: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   defaultColumnIcon: 'list-alt',
+};
+
+export const listCreatorData = {
+  inputs: [
+    {placeholder: 'List title', name: 'title'},
+    {placeholder: 'List description', name: 'description'},
+    {placeholder: 'List image (add url)', name: 'image'},
+  ],
 };
 
 export const pageContents = {

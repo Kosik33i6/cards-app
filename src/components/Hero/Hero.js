@@ -3,6 +3,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactHtmlParser from 'react-html-parser';
 
+import {settings} from '../../data/dataStore';
+
 import styles from './Hero.scss';
 
 
@@ -18,6 +20,10 @@ const Hero = ({titleText, image}) => {
 Hero.propTypes = {
   titleText: PropTypes.node.isRequired,
   image: PropTypes.string,
+};
+
+Hero.defaultPropTypes = {
+  image: settings.defaultListImage,
 };
 
 export default Hero;

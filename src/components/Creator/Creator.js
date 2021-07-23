@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Creator.scss';
 import Button from '../Button/Button';
+import Input from '../Input/Input';
 import PropTypes from 'prop-types';
 
 class Creator extends React.Component {
@@ -36,20 +37,28 @@ class Creator extends React.Component {
   }
 
   handleCancel = () => {
-    this.setState({
-      value: '',
-      visibleButtons: false,
-    });
+    let confirmResult;
+
+    if(this.state.value.length > 0) {
+      const message = 'You are sure you want to cancel?';
+      confirmResult = window.confirm(message);
+    }
+
+    if(confirmResult) {
+      this.setState({
+        value: '',
+        visibleButtons: false,
+      });
+    }
   }
 
   render() {
     return (
       <div className={styles.component}>
-        <input
-          type='text'
+        <Input
           placeholder={this.props.text}
           value={this.state.value}
-          onChange={this.handleChange}
+          change={this.handleChange}
         />
         <div className={styles.buttons + (this.state.visibleButtons ? ' ' + styles.buttonsShown : '')}>
           <Button onClick={this.handleOK}>OK</Button>

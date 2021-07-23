@@ -1,7 +1,8 @@
 @import '../../styles/settings.scss';
 
 .component {
-  width: 100%;
+  width: 50%;
+  margin: 50px auto 0;
 }
 
 .buttons {
@@ -28,4 +29,12 @@
       }
     }
   }
+}
+
+.title {
+  font-size: 30px;
+  color: $color-light;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 25px;
 }

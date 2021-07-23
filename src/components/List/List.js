@@ -46,6 +46,8 @@ List.propTypes = {
 
 List.defaultProps = {
   description: settings.defaultListDescription,
+  title: 'default',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
 };
 
 export default List;
