@@ -1,0 +1,18 @@
+@import '../../styles/settings.scss';
+
+.component {
+  flex-basis: 30%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: $color-warning;
+  border-radius: 5px;
+
+  .title {
+    padding-right: 10px;
+    font-size: 18px;
+  }
+
+  .icon {
+    font-size: 22px;
+  }
+}

@@ -22,6 +22,7 @@
   "license": "ISC",
   "dependencies": {
     "http-server": "^0.12.3",
+    "is-url": "^1.2.4",
     "prop-types": "^15.7.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",

@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import List from '../List/ListContainer';
 import Search from '../Search/SearchContainer';
 import ListCreator from '../ListCreator/ListCreator';
-import MenuHamburger from '../MenuHamburger/MenuHamburger';
+import Navigation from '../MenuHamburger/NavigationContainer';
 
 import {listCreatorData} from '../../data/dataStore';
 
@@ -25,7 +25,7 @@ class App extends React.Component {
     ));
     return (
       <main className={styles.component}>
-        <MenuHamburger/>
+        <Navigation/>
         <h1 className={styles.title}>{title}</h1>
         <h2 className={styles.subtitle}>{subtitle}</h2>
         <Search/>

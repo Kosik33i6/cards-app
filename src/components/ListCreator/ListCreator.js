@@ -47,6 +47,7 @@ class ListCreator extends Component {
   handleOK = () => {
     const {title, description, image} = this.state.inputValue;
     const condition = title != '' && description != '' && image != '';
+
     if(condition){
       this.props.action(title, description, image);
       this.setState({
@@ -62,10 +63,9 @@ class ListCreator extends Component {
 
   handleCancel = () => {
     let confirmResult;
+    const {title, description, image} = this.state.inputValue;
 
-    const {title, description, image: imageUrl} = this.state.inputValue;
-
-    if((title || description || imageUrl) > 0) {
+    if(title.length > 0 || description.length > 0 || image.length > 0) {
       const message = 'You are sure you want to cancel?';
       confirmResult = window.confirm(message);
     }

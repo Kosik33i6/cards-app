@@ -2,6 +2,7 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 import ReactHtmlParser from 'react-html-parser';
+// import isUrl from 'is-url';
 
 import Hero from '../Hero/Hero';
 import Column from '../Column/ColumnContainer';
@@ -46,8 +47,8 @@ List.propTypes = {
 
 List.defaultProps = {
   description: settings.defaultListDescription,
-  title: 'default',
-  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  title: settings.defaultListTitle,
+  image: settings.defaultListImage,
 };
 
 export default List;

@@ -1,7 +1,6 @@
 export const settings = {
   columnCreatorText: 'Add new column',
   cardCreatorText: 'Add new card',
-  // listCreatortext: ['title', 'description', 'imageUrl'],
   creator: {
     buttonOK: 'OK',
     buttonCancel: 'Cancel',
@@ -11,6 +10,11 @@ export const settings = {
     defaultText: 'Search...',
     icon: 'search',
   },
+  listItem: {
+    listTitle: 'List title: ',
+    sublistTitle: 'Columns',
+  },
+  defaultListTitle: 'Things to do <sup>soon!</sup>',
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultListImage: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   defaultColumnIcon: 'list-alt',
