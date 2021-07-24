@@ -34,7 +34,10 @@
 .title {
   font-size: 30px;
   color: $color-light;
+  background-color: $color-light-2;
+  border-radius: 5px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 25px;
+  padding: 15px 0;
 }
