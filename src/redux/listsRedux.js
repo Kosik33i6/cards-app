@@ -15,8 +15,8 @@ export const createActionAddList = ({...payload}) => {
 
 // reducer
 export default function reducer(statePart = [], action = {}) {
-  console.log('statePart ListRedux: ', statePart);
-  console.log('action ListRedux: ', action);
+  // console.log('statePart ListRedux: ', statePart);
+  // console.log('action ListRedux: ', action);
   switch (action.type) {
     case ADD_LIST:
       return [...statePart, action.payload];
