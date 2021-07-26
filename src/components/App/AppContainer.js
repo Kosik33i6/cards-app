@@ -16,18 +16,4 @@ const mapDispatchToProps = dispatch => ({
   })),
 });
 
-// const mapDispatchToProps = (dispatch) => {
-//   console.log('mapDispatchToProps - dispatch: ', dispatch);
-//   // console.log('mapDispatchToProps - props', props);
-//   return {
-//     addList: (title, description, image) => {
-//       // console.log('value: ', value);
-//       return dispatch(createActionAddList({
-//         title,
-//         description,
-//         image}));
-//     },
-//   };
-// };
-
 export default connect(mapStateToProps, mapDispatchToProps)(App);
