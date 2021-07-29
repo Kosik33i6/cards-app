@@ -7,4 +7,16 @@
   padding: $base-size;
   margin: 0 0 $base-size 0;
   border-radius: $radius;
+  color: $color-dark;
+}
+
+.switchWrapper {
+  position: relative;
+
+  > :first-child ~ * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 }

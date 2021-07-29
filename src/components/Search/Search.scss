@@ -1,9 +1,10 @@
 @import '../../styles/settings.scss';
 
 .component {
-  width: 100%;
+  margin: 0 auto;
+  width: 50%;
   display: flex;
-
+  padding-top: 30px;
   input {
     // flex-grow: 1;
     background: $color-light;

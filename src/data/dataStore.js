@@ -14,10 +14,25 @@ export const settings = {
     listTitle: 'List title: ',
     sublistTitle: 'Columns',
   },
+  header: {
+    icon: 'box',
+  },
   defaultListTitle: 'Things to do <sup>soon!</sup>',
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultListImage: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   defaultColumnIcon: 'list-alt',
+};
+
+export const faq = {
+  titleForHero: 'FAQ',
+  title: 'FAQ',
+  paragraph: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus nulla nihil quidem explicabo debitis unde amet eos magni mollitia error, quibusdam nobis animi aliquid quasi enim sequi reprehenderit velit voluptates dolorum porro autem consequatur! Doloremque eius numquam enim aperiam provident ad iste, possimus eaque, illo, nam error facilis beatae neque?',
+};
+
+export const info = {
+  titleForHero: 'Info',
+  title: 'Info',
+  paragraph: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus nulla nihil quidem explicabo debitis unde amet eos magni mollitia error, quibusdam nobis animi aliquid quasi enim sequi reprehenderit velit voluptates dolorum porro autem consequatur! Doloremque eius numquam enim aperiam provident ad iste, possimus eaque, illo, nam error facilis beatae neque?',
 };
 
 export const listCreatorData = {
@@ -89,6 +104,18 @@ export const listData = {
 const lists = [
   {
     id: 'list-1',
+    title: 'Things to do <sup>soon!</sup>',
+    description: 'Interesting things I want to check out!',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+  {
+    id: 'list-2',
+    title: 'Things to do <sup>soon!</sup>',
+    description: 'Interesting things I want to check out!',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+  {
+    id: 'list-3',
     title: 'Things to do <sup>soon!</sup>',
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',

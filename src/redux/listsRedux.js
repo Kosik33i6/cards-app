@@ -6,7 +6,7 @@ const createActionName = name => `app/${reducerName}/${name}`;
 export const ADD_LIST = createActionName('ADD_LIST');
 
 export const createActionAddList = ({...payload}) => {
-  console.log('payload: ', payload);
+  // console.log('payload: ', payload);
   return {
     payload: {...payload, id: shortid.generate()},
     type: ADD_LIST,

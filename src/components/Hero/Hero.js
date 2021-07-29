@@ -24,6 +24,7 @@ Hero.propTypes = {
 
 Hero.defaultPropTypes = {
   image: settings.defaultListImage,
+  titletext: settings.defaultListTitle,
 };
 
 export default Hero;

@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import App from './App';
+import App from './Home';
 import {createActionAddList} from '../../redux/listsRedux';
 
 const mapStateToProps = state => ({

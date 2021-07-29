@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 
 import PropTypes from 'prop-types';
-import shortid from 'shortid';
+// import shortid from 'shortid';
 
 import Input from '../Input/Input';
 import Button from '../Button/Button';
+import {settings} from '../../data/dataStore';
 
 import styles from './ListCreator.scss';
 
@@ -44,11 +45,16 @@ class ListCreator extends Component {
     });
   }
 
-  handleOK = () => {
-    const {title, description, image} = this.state.inputValue;
-    const condition = title != '' && description != '' && image != '';
+  checkURL = (url) => url.match(/\.(jpeg|jpg|gif|png)$/) != null;
 
-    if(condition){
+  handleOK = () => {
+    let {title, description, image} = this.state.inputValue;
+
+    if(!this.checkURL(image) || image.length == 0) {
+      image = settings.defaultListImage;
+    }
+
+    if(title != '' && description != ''){
       this.props.action(title, description, image);
       this.setState({
         inputValue: {
@@ -58,6 +64,8 @@ class ListCreator extends Component {
         },
         visibleButtons: false,
       });
+    } else {
+      alert('Add title and description');
     }
   }
 
@@ -88,7 +96,8 @@ class ListCreator extends Component {
 
     const inputsComponent = inputs.map(({placeholder, name}) => (
       <Input
-        key={() => shortid.generate()}
+        // key={() => shortid.generate()}
+        key={name}
         type="text"
         placeholder={placeholder}
         value={this.state.inputValue[name]}

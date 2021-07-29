@@ -28,7 +28,7 @@ const Column = ({title, icon, cards, addCard, id}) => {
       )}
     </Droppable>
   );
-
+  console.log('cards: ', cards);
   return (
     <section className={styles.component}>
       <h3 className={styles.title}>
